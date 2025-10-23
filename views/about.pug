@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+      }
+      h1 { color: #333; }
+      ul { list-style-type: square; }
+  body
+    h1 Template Demo with Pug
+    p Hello from #{name}
+    
+    h2 Features:
+    ul
+      each item in items
+        li= item
+    
+    p This page was rendered using Pug template engine!
+    
+    a(href='/') Back to Home
